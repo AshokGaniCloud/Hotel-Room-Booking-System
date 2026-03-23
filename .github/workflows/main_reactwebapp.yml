@@ -32,9 +32,7 @@ jobs:
         run: |
           cd admin-panel
           npm -v
-          npm install
-          npm run build --if-present
-          npm  install-test 
+          npm run-script
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
