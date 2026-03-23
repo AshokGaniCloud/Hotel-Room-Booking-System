@@ -30,6 +30,8 @@ jobs:
 
       - name: npm install, build, and test
         run: |
+          cd admin-panel
+          npm -v
           npm exec react-scripts build
           npm exec react-scripts test
           npm exec react-scripts start
