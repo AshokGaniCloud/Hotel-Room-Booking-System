@@ -30,9 +30,9 @@ jobs:
 
       - name: npm install, build, and test
         run: |
-          npm ci
           npm exec react-scripts build
           npm exec react-scripts test
+          npm exec react-scripts start
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
